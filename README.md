@@ -1,5 +1,7 @@
 # jQuery Plugin vzv_sub_menu
-add sub menu from content
+add sub menu from content headers
+## USE:
+```markdown
 jQuery(document).ready(function($){
       $('body').vzv_sub_menu({
           'headers' : 'h2, h3',
@@ -8,5 +10,5 @@ jQuery(document).ready(function($){
           'title': 'Content NAV:',
       });
 });
-
-# See demo(https://vadya8z.github.io/vzv_sub_menu/)
+```
+### See demo(https://vadya8z.github.io/vzv_sub_menu/)
