@@ -1,3 +1,9 @@
+/**
+ * @author Zikiy Vadim
+ * @package jQuery Plugins
+ * @copyright Copyright (C) 2017 All rights reserved.
+ * @link http://online-services.org.ua/
+ */
 (function ($) {
     $.fn.vzv_sub_menu = function (options) {
         //console.log('options');
