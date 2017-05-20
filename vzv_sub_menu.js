@@ -1,9 +1,9 @@
 (function ($) {
     $.fn.vzv_sub_menu = function (options) {
-        console.log('options');
-        console.log(options);
-        console.log('search_clock|this');
-        console.log(this);
+        //console.log('options');
+        //console.log(options);
+        //console.log('search_clock|this');
+        //console.log(this);
         if( !(this instanceof $) || (this.length !== 1) ){
             console.error('Error! Not find content element');
             return;
@@ -35,12 +35,12 @@
         }
         //Создаем меню
         var $sub_menu = $('<div id="'+default_settings.id+'" class="'+default_settings.main_class+'"></div>').append('<ul class="'+default_settings.class+'"></ul>');
-       console.log($sub_menu);
+       //console.log($sub_menu);
 
         var href_id_element_num = 1;
 
         var $headers = $content_block.find(default_settings.headers);
-        console.log($content_block);
+        //console.log($content_block);
         //Проходим каждый заголовок для создания меню
         $headers.each(function () {
             var header_id = 'vzv_sm_' + (href_id_element_num++);
