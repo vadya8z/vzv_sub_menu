@@ -11,4 +11,5 @@ jQuery(document).ready(function($){
       });
 });
 ```
-### See demo(https://vadya8z.github.io/vzv_sub_menu/)
+### See demo
+<a href="https://vadya8z.github.io/vzv_sub_menu/" target="_blank">https://vadya8z.github.io/vzv_sub_menu/</a>
