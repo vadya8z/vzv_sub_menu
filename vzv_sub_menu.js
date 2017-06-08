@@ -1,9 +1,11 @@
 /**
  * @author Zikiy Vadim
  * @package jQuery Plugins
+ * @name VZVShowMore
  * @copyright Copyright (C) 2017 All rights reserved.
  * @link http://online-services.org.ua/
  */
+
 (function ($) {
     $.fn.vzv_sub_menu = function (options) {
         //console.log('options');
@@ -11,14 +13,15 @@
         //console.log('search_clock|this');
         //console.log(this);
         if( !(this instanceof $) || (this.length !== 1) ){
-            console.error('Error! Not find content element');
-            return;
+            console.log('Error! Not find content element');
+            // return;
         }
 
         var $content_block = this;
+
         //Основные настройки для плагина (приватные)
         var _settings = {
-            id: 'vzv_sub_menu',
+            'id': 'vzv_sub_menu',
             main_class: 'vzv_sub_menu',
             fixed_id: 'vzv_sub_menu_fixed',
         };
@@ -36,9 +39,12 @@
             title_tag: 'h4',
         }, options, _settings);
 
-        if((default_settings.before !== true) && (default_settings.after !== true) && (default_settings.fixed !== true)){
+        if((default_settings.before !== true)
+            && (default_settings.after !== true)
+            && (default_settings.fixed !== true)){
             return;
         }
+
         //Создаем меню
         var $sub_menu = $('<div id="'+default_settings.id+'" class="'+default_settings.main_class+'"></div>').append('<ul class="'+default_settings.class+'"></ul>');
        //console.log($sub_menu);
@@ -74,9 +80,9 @@
         if(default_settings.after === true){
             $sub_menu.clone().removeAttr('id').appendTo(default_settings.append_to);
         }
-        if(default_settings.fixed === true){
-
-        }
+        // if(default_settings.fixed === true){
+        //
+        // }
 
 
         //Анимация при скролле
@@ -89,6 +95,8 @@
             });
             return false;
         });
+
+        return $content_block;
 
     };
 })(jQuery);
